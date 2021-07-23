@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Mayara Romao" content="2 Desafio Gama Academy" />
+    <title>Desafio 1 | Gama Academy</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <script type="text/javascript" src="script.js">
+    </script>
+
+    <style>
+        .cabecalho {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-conteiner {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .ilustracao {
+            display: flex;
+            margin: 10px;
+            border-radius: 5px;
+            width: 600px 250px;
+        }
+
+        .bloco-post {
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            margin: 10px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid white;
+            flex-basis: 50px;
+            flex-grow: 2;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .rodape {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-rodape {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <div class="cabecalho">
+            <img src="imagens/1.png" width="100%" alt="Cabeçalho da Página" title="Cabeçalho da Página" />
+        </div>
+
+    </header>
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Conteúdo principal-->
+    <main>
+
+            <div class="card-conteiner">
+
+                <div class="bloco-post" id="div1">
+                    <img class="ilustacao" src="imagens/2.png" width="100%" alt="Cadastro Clientes"
+                        title="Cadastro Clientes" />
+                    <label for="campo1">Nome</label>
+                    <input type="text" name="nome" id="campo1" />
+                    <br>
+                    <label for="campo2">E-mail</label>
+                    <input type="text" name="email" id="campo2" />
+                    <br>
+                    <label for="campo3">CPF</label>
+                    <input type="text" name="number" id="campo3" />
+                    <br>
+                    <label for="campo4">Telefone</label>
+                    <input type="text" name="number" id="campo4" />
+                    <br>
+                    <label for="campo5">Endereço</label>
+                    <input type="text" name="endereço" id="campo5" />
+                    <br>
+                    <button class="button" type="button" onclick="cadastraCliente()">Enviar</button>
+                    <br>    
+                </div>
+
+                <div class="bloco-post" id="div2">
+                    <img class="ilustacao" src="imagens/3.png" width="100%" alt="Cadastro Produtos"
+                        title="Cadastro Produtos" />
+                    <label for="campo6">Código</label>
+                    <input type="text" name="number" id="campo6" />
+                    <br>
+                    <label for="campo7">Produto</label>
+                    <input type="text" name="produto" id="campo7" />
+                    <br>
+                    <label for="campo8">Marca</label>
+                    <input type="text" name="marca" id="campo8" />
+                    <br>
+                    <label for="campo9">Quantidade</label>
+                    <input type="text" name="quantidade" id="campo9" />
+                    <br>
+                    <label for="campo10">Observações</label>
+                    <input type="text" name="observação" id="campo10" />
+                    <br>
+                    <button class="button" type="button" onclick="cadastraProduto()">Enviar</button>
+                    <br>
+                </div>
+            </div>
+
+    </main>
+
+
+</body>
+<footer>
+    <div class="rodapé">
+        <fieldset>
+            <p class="text-rodape">Feito por Mayara Romão - 2º Desafio Hiring Coders - Gama Academy - 2021</p>
+        </fieldset>
+    </div>
+</footer>
+
+</html>
